@@ -5,55 +5,57 @@ import { faHouseChimneyWindow, faUser, faSuitcase, faEnvelopeOpen, faBlog, faDes
 
 const SideNav = () => {
     return (
-        <div className='h-full absolute right-0 text-white flex items-center pr-10'>
-            <div className='grid grid-cols-1 gap-5'>
+        <div className='h-screen absolute right-0 flex items-center pr-10'>
+            <div className='grid grid-cols-1 gap-5 text-white'>
                 <NavLink
                     to={'/'}
                     className={({ isActive }) =>
-                        isActive ? ' text-yellow-400 border-2 border-yellow-400 uppercase h-full block font-semibold custom-button' : 'uppercase font-semibold custom-button text-white'
+                        isActive ? ' bg-yellow-400 border-2 border-yellow-400 uppercase font-semibold custom-button h-12 w-12 rounded-full flex justify-center items-center' : 'uppercase font-semibold custom-button h-12 w-12 rounded-full bg-slate-600 flex justify-center items-center'
                     }
                 >
-                    <FontAwesomeIcon icon={faHouseChimneyWindow} className=" h-9"></FontAwesomeIcon>
+                    <div className=' '>
+                        <FontAwesomeIcon icon={faHouseChimneyWindow} className=" h-5"></FontAwesomeIcon>
+                    </div>
                 </NavLink>
                 <NavLink
                     to={'/about'}
                     className={({ isActive }) =>
-                        isActive ? ' text-yellow-400 border-2 border-yellow-400 uppercase h-full block font-semibold custom-button' : 'uppercase font-semibold custom-button text-white'
+                        isActive ? ' bg-yellow-400 border-2 border-yellow-400 uppercase font-semibold custom-button h-12 w-12 rounded-full flex justify-center items-center' : 'uppercase font-semibold custom-button h-12 w-12 rounded-full bg-slate-600 flex justify-center items-center'
                     }
                 >
-                    <FontAwesomeIcon icon={faUser} className=" h-9"></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faUser} className=" h-5"></FontAwesomeIcon>
                 </NavLink>
                 <NavLink
                     to={'/skills'}
                     className={({ isActive }) =>
-                        isActive ? ' text-yellow-400 border-2 border-yellow-400 uppercase h-full block font-semibold custom-button' : 'uppercase font-semibold custom-button text-white'
+                        isActive ? ' bg-yellow-400 border-2 border-yellow-400 uppercase font-semibold custom-button h-12 w-12 rounded-full flex justify-center items-center' : 'uppercase font-semibold custom-button h-12 w-12 rounded-full bg-slate-600 flex justify-center items-center'
                     }
                 >
-                    <FontAwesomeIcon icon={faDesktop} className=" h-9"></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faDesktop} className=" h-5"></FontAwesomeIcon>
                 </NavLink>
                 <NavLink
                     to={'/projects'}
                     className={({ isActive }) =>
-                        isActive ? ' text-yellow-400 border-2 border-yellow-400 uppercase h-full block font-semibold custom-button' : 'uppercase font-semibold custom-button text-white'
+                        isActive ? ' bg-yellow-400 border-2 border-yellow-400 uppercase font-semibold custom-button h-12 w-12 rounded-full flex justify-center items-center' : 'uppercase font-semibold custom-button h-12 w-12 rounded-full bg-slate-600 flex justify-center items-center'
                     }
                 >
-                    <FontAwesomeIcon icon={faSuitcase} className=" h-9"></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faSuitcase} className=" h-5"></FontAwesomeIcon>
                 </NavLink>
                 <NavLink
                     to={'/contact'}
                     className={({ isActive }) =>
-                        isActive ? ' text-yellow-400 border-2 border-yellow-400 uppercase h-full block font-semibold custom-button' : 'uppercase font-semibold custom-button text-white'
+                        isActive ? ' bg-yellow-400 border-2 border-yellow-400 uppercase font-semibold custom-button h-12 w-12 rounded-full flex justify-center items-center' : 'uppercase font-semibold custom-button h-12 w-12 rounded-full bg-slate-600 flex justify-center items-center'
                     }
                 >
-                    <FontAwesomeIcon icon={faEnvelopeOpen} className=" h-9"></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faEnvelopeOpen} className=" h-5"></FontAwesomeIcon>
                 </NavLink>
                 <NavLink
                     to={'/blogs'}
                     className={({ isActive }) =>
-                        isActive ? ' text-yellow-400 border-2 border-yellow-400 uppercase h-full block font-semibold custom-button' : 'uppercase font-semibold custom-button text-white'
+                        isActive ? ' bg-yellow-400 border-2 border-yellow-400 uppercase font-semibold custom-button h-12 w-12 rounded-full flex justify-center items-center' : 'uppercase font-semibold custom-button h-12 w-12 rounded-full bg-slate-600 flex justify-center items-center'
                     }
                 >
-                    <FontAwesomeIcon icon={faBlog} className=" h-9"></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faBlog} className=" h-5"></FontAwesomeIcon>
                 </NavLink>
             </div>
         </div>

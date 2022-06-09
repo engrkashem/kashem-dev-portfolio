@@ -3,7 +3,7 @@ import SideNav from '../SideNav/SideNav';
 
 const About = () => {
     return (
-        <div>
+        <div className='bg-slate-900 h-screen'>
             <SideNav></SideNav>
             <h2>About</h2>
         </div>
