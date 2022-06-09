@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ContactModal from '../Shared/ContactModal';
 import SideNav from '../SideNav/SideNav';
 import Banner from './Banner';
 import './Home.css';
@@ -7,6 +8,7 @@ import Project2 from './Project2';
 import Project3 from './Project3';
 
 const Home = () => {
+    const [closeModal, setCloseModal] = useState(false);
     return (
         <div className=' bg-slate-900'>
             <SideNav></SideNav>
@@ -17,6 +19,15 @@ const Home = () => {
                 <Project2></Project2>
                 <Project3></Project3>
             </div>
+            <div className='p-10'>
+                <label onClick={() => setCloseModal(true)} htmlFor="contact-modal" className="btn modal-button bg-yellow-400 px-10 text-lg rounded-full">Contact Me</label>
+            </div>
+            {
+                closeModal && <ContactModal
+                    setCloseModal={setCloseModal}
+                ></ContactModal>
+            }
+
         </div>
     );
 };
