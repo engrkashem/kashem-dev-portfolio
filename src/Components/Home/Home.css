@@ -1,6 +1,10 @@
-.banner {
+.banner-container {
     background-image: url(../../images/portfploi_banner.jpg);
     background-repeat: no-repeat;
+}
+
+.banner {
+    width: 85%;
 }
 
 .banner-text {
