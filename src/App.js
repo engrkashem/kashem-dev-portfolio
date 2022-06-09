@@ -8,6 +8,7 @@ import Skills from "./Components/Skills/Skills";
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from "./Components/Footer/Footer";
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
+      <Footer></Footer>
       <ToastContainer />
     </div>
   );

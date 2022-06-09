@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseChimneyWindow, faUser, faSuitcase, faEnvelopeOpen, faBlog, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import './SideNav.css';
+import ContactModal from '../Shared/ContactModal';
 
 const SideNav = () => {
+    const [closeModal, setCloseModal] = useState(false);
     return (
         <div className='h-screen absolute right-0 flex items-center lg:pr-10'>
             <div className='grid grid-cols-1 gap-5 text-white'>
@@ -46,14 +48,7 @@ const SideNav = () => {
                 >
                     <FontAwesomeIcon icon={faSuitcase} className=" h-5"></FontAwesomeIcon>
                 </NavLink>
-                <button
-                    to={'/contact'}
-                    className={'uppercase font-semibold custom-button h-12 w-12 rounded-full bg-slate-600 flex justify-center items-center tooltip'
-                    }
-                    data-tip="CONTACT"
-                >
-                    <FontAwesomeIcon icon={faEnvelopeOpen} className=" h-5"></FontAwesomeIcon>
-                </button>
+                <label onClick={() => setCloseModal(true)} htmlFor="contact-modal" className="btn modal-button bg-yellow-400  text-lg rounded-full "><FontAwesomeIcon icon={faEnvelopeOpen} className=" h-5"></FontAwesomeIcon></label>
                 <NavLink
                     to={'/blogs'}
                     className={({ isActive }) =>
@@ -64,6 +59,11 @@ const SideNav = () => {
                     <FontAwesomeIcon icon={faBlog} className=" h-5"></FontAwesomeIcon>
                 </NavLink>
             </div>
+            {
+                closeModal && <ContactModal
+                    setCloseModal={setCloseModal}
+                ></ContactModal>
+            }
         </div>
     );
 };
