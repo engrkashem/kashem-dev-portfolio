@@ -6,7 +6,7 @@ import devPic from '../../images/myPic.png';
 const Banner = () => {
     return (
         <div className='banner-container  bg-cover realative'>
-            <div className="banner min-h-screen  grid grid-cols-1 lg:grid-cols-2 auto-cols-max">
+            <div className="container min-h-screen  grid grid-cols-1 lg:grid-cols-2 auto-cols-max">
                 <div className='h-full flex items-end '>
                     <img className='' src={devPic} alt="" />
                 </div>

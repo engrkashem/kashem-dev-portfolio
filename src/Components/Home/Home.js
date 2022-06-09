@@ -11,6 +11,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     const [closeModal, setCloseModal] = useState(false);
+
     return (
         <div className=' bg-slate-900'>
             <SideNav></SideNav>

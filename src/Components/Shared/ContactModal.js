@@ -1,23 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 
 const ContactModal = ({ setCloseModal }) => {
-    /* const emailRef = useRef(null);
-    const messageRef = useRef(null);
-    const subjectRef = useRef(null);
-    const nameRef = useRef(null);
-    const phoneRef = useRef(null); */
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        /* const from_email = emailRef.current.value;
-        const html_message = messageRef.current.value;
-        const subject = subjectRef.current.value;
-        const from_name = nameRef.current.value;
-        const contact_number = phoneRef.current.value;
-        const emailInfo = { from_name, from_email, subject, html_message, contact_number }; */
-
         emailjs.sendForm('gmail', 'template_fukym13', e.target, 'zhIuyDW3-KcZ6tC58')
             .then((result) => {
                 toast.success('Email has been sent to the Developer');
