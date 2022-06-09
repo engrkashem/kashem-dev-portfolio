@@ -1,16 +1,13 @@
 import React from 'react';
 import SideNav from '../SideNav/SideNav';
-import Banner from './Banner';
-import './Home.css';
 
-const Home = () => {
+const Blogs = () => {
     return (
         <div>
             <SideNav></SideNav>
-            <Banner></Banner>
-
+            <h2>Blogs</h2>
         </div>
     );
 };
 
-export default Home;
+export default Blogs;
