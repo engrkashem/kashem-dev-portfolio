@@ -1,5 +1,7 @@
 import React from 'react';
 import project1Banner from '../../images/project1_banner.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Project1 = () => {
     return (
@@ -15,7 +17,7 @@ const Project1 = () => {
                         <li className='mb-2' >Admin dashboard is introduced. JWT and admin verifying middle tire functions are enacted on the server-side.</li>
                         <li className='mb-2'>Transformed the project into full-stack applying React.js, Node.js, Express.js, Firebase, React form hook, and MongoDB.</li>
                     </ul>
-                    <button className="btn bg-yellow-400 px-10 text-lg rounded-full">Details</button>
+                    <button className="button text-white font-medium text-lg border-2 border-yellow-400 rounded-full pl-5 mt-5 flex items-center">Details <FontAwesomeIcon icon={faArrowRight} className='ml-3 text-2xl p-4 bg-yellow-400 rounded-full'></FontAwesomeIcon></button>
                 </div>
             </div>
         </div>

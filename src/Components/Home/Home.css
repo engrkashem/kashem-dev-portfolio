@@ -14,7 +14,7 @@
     width: 570px;
 }
 
-.download-resume-button {
+.button {
     text-transform: uppercase;
     transition: all 0.5s;
     position: relative;
@@ -22,7 +22,7 @@
     z-index: 1;
 }
 
-.download-resume-button:before {
+.button:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -36,6 +36,6 @@
     z-index: -1;
 }
 
-.download-resume-button:hover:before {
+.button:hover:before {
     width: 100%;
 }
