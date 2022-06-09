@@ -4,8 +4,10 @@ import Blogs from "./Components/Blogs/Blogs";
 import Home from "./Components/Home/Home";
 import NotFound from "./Components/NotFound/NotFound";
 import Projects from "./Components/Projects/Projects";
-// import SideNav from "./Components/SideNav/SideNav";
 import Skills from "./Components/Skills/Skills";
+
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -21,6 +23,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
