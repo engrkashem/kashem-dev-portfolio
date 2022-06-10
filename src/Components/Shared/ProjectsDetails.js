@@ -29,7 +29,7 @@ const ProjectsDetails = () => {
             <div className='container'>
                 <h2 className='text-6xl font-bold text-center py-10'>{name}</h2>
                 <div className=' flex flex-col items-center mb-20'>
-                    <div className='h-60 w-96 mb-3'>
+                    <div className='h-52 lg:h-60 w-72 lg:w-96 mb-3'>
                         <img className='w-full h-full'
                             src={image} alt="" />
                     </div>
