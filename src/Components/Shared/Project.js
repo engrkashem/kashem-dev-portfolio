@@ -5,10 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Project = ({ project }) => {
     const navigate = useNavigate();
-    const {
-        id, bullet1, bullet2, bullet3, bullet4, fea1,
-        fea2, fea3, fea4, fea5, fea6, fea7, fea8, fun1, fun2, fun3, fun4, fun5, fun6, fun7, fun8, img, name, liveLink, serverRepo, clientRepo, tech
-    } = project;
+    const { id, bullet1, bullet2, bullet3, bullet4, img, name, tech } = project;
 
     return (
         <div className="hero glass text-white ">
