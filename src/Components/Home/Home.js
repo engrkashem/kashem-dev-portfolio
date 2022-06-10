@@ -3,14 +3,19 @@ import ContactModal from '../Shared/ContactModal';
 import SideNav from '../SideNav/SideNav';
 import Banner from './Banner';
 import './Home.css';
-import Project1 from './Project1';
-import Project2 from './Project2';
-import Project3 from './Project3';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import useProjects from '../../hooks/useProjects';
+import Project from '../Shared/Project';
 
 const Home = () => {
+    //to close contact modal after submitting
     const [closeModal, setCloseModal] = useState(false);
+
+    //load fake project data
+    const [projects] = useProjects();
+    //slicing 3 projects out of 5
+    const topProjects = projects.slice(0, 3);
 
     return (
         <div className=' bg-slate-900'>
@@ -18,9 +23,13 @@ const Home = () => {
             <Banner></Banner>
             <div className='mt-16 pb-10 px-5 flex flex-col gap-10'>
                 <h2 className=' text-center text-5xl font-bold text-white mb-10'>PROJECT SHOWCASE</h2>
-                <Project1></Project1>
-                <Project2></Project2>
-                <Project3></Project3>
+                {
+                    topProjects.map(project => <Project
+                        key={project.id}
+                        project={project}
+                    ></Project>)
+                }
+
             </div>
             <div className='p-10'>
                 <label onClick={() => setCloseModal(true)} htmlFor="contact-modal" className="btn modal-button bg-yellow-400 px-10 text-lg rounded-full ">Contact Me <FontAwesomeIcon icon={faArrowRight} className="ml-1"></FontAwesomeIcon></label>
