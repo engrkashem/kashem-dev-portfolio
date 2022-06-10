@@ -5,7 +5,10 @@ const Blogs = () => {
     return (
         <div className='bg-slate-900 h-screen'>
             <SideNav></SideNav>
-            <h2>Blogs</h2>
+            <div className='container py-10'>
+                <h2 className=' text-6xl font-bold text-white text-center'>Blogs</h2>
+                <p className=' text-white text-center mt-10 text-4xl'>Comming Soon</p>
+            </div>
         </div>
     );
 };

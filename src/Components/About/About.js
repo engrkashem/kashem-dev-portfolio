@@ -1,6 +1,5 @@
 import React from 'react';
 import SideNav from '../SideNav/SideNav';
-import './About.css';
 import myPic from '../../images/myPic.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
