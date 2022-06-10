@@ -1,9 +1,19 @@
 import React from 'react';
-import project3Banner from '../../images/project3_banner.png';
+import project3Banner from '../../images/project3_banner.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Project3 = () => {
+    const projects = {
+        id: 1,
+        name: 'SKS Inc.',
+        bullet1: 'Employing React.js, React Router, Bootstrap, etc coalesce with the authentication by Firebase.',
+        bullet2: 'Custom active Links, Custom hook imposed. ',
+        bullet3: 'Users can choose or customize tour packages according to their choice and confirm bookings.',
+        liveLink: 'https://travel-with-elina.web.app/',
+        clientRepo: 'https://github.com/engrkashem/travel-guide-elina-client',
+        serverRepo: 'https://github.com/engrkashem/tech-hub-server'
+    }
     return (
         <div className="hero glass text-white ">
             <div>
@@ -13,19 +23,15 @@ const Project3 = () => {
                         <h1 className="text-5xl font-bold">Travel With Elina</h1>
                         <h2 className=' my-3 text-xl font-semibold'>Features & Technologies</h2>
                         <ul>
-                            <li className='mb-2 '>Employing React.js, React Router, Bootstrap, etc coalesce with the authentication by Firebase.</li>
-                            <li className='mb-2' >Custom active Links, Custom hook imposed. </li>
-                            <li className='mb-2' >Users can choose or customize tour packages according to their choice and confirm bookings.</li>
+                            <li>{projects.bullet1}</li>
+                            <li>{projects.bullet2}</li>
+                            <li>{projects.bullet3}</li>
+
                         </ul>
+                        <button className="button text-white font-medium text-lg border-2 border-yellow-400 rounded-full pl-5 mt-5 flex items-center">
+                            Visit Web Site <FontAwesomeIcon icon={faArrowRight} className='ml-3 text-2xl p-4 bg-yellow-400 rounded-full'></FontAwesomeIcon>
+                        </button>
                     </div>
-                </div>
-                <div className='flex gap-5 p-5'>
-                    <button className="button text-white font-medium text-lg border-2 border-yellow-400 rounded-full pl-5 mt-5"> <a className=' flex items-center' href="https://travel-with-elina.web.app/" target={'_blank'}>
-                        Visit Web Site <FontAwesomeIcon icon={faArrowRight} className='ml-3 text-2xl p-4 bg-yellow-400 rounded-full'></FontAwesomeIcon>
-                    </a></button>
-                    <button className="button text-white font-medium text-lg border-2 border-yellow-400 rounded-full pl-5 mt-5"> <a className=' flex items-center' href="https://github.com/engrkashem/travel-guide-elina-client" target={'_blank'}>
-                        Client Side Code <FontAwesomeIcon icon={faArrowRight} className='ml-3 text-2xl p-4 bg-yellow-400 rounded-full'></FontAwesomeIcon>
-                    </a></button>
                 </div>
             </div>
         </div>
