@@ -12,7 +12,7 @@ const About = () => {
                 <h2 className=' text-6xl font-semibold text-center py-10'>Biography</h2>
                 <div className="hero glass min-h-screen">
                     <div className="hero-content flex-col lg:flex-row-reverse">
-                        <img src={myPic} className="max-w-sm rounded-lg shadow-2xl" alt='' />
+                        <img src={myPic} className="w-72 lg:w-full rounded-lg shadow-2xl" alt='' />
                         <div>
                             <h3 className="text-4xl font-bold">Mohammad Abul Kashem</h3>
                             <h4 className="text-2xl font-bold">Khulna, Bangladesh. (1991-Present)</h4>

@@ -21,7 +21,7 @@ const Home = () => {
         <div className=' bg-slate-900'>
             <SideNav></SideNav>
             <Banner></Banner>
-            <div className='mt-16 pb-10 px-5 flex flex-col gap-10'>
+            <div className='mt-16 pb-10 lg:px-5 flex flex-col gap-10 mx-2'>
                 <h2 className=' text-center text-5xl font-bold text-white mb-10'>PROJECT SHOWCASE</h2>
                 {
                     topProjects.map(project => <Project

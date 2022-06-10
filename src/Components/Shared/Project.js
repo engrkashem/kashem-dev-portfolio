@@ -11,7 +11,7 @@ const Project = ({ project }) => {
         <div className="hero glass text-white ">
             <div>
                 <div className=' hero-content flex-col lg:flex-row-reverse'>
-                    <img src={img} className="max-w-sm rounded-lg shadow-2xl" alt='Project banner' />
+                    <img src={img} className="w-72 lg:w-full rounded-lg shadow-2xl" alt='Project banner' />
                     <div>
                         <h1 className="text-5xl font-bold">{name}</h1>
                         <h2 className=' mt-3 text-xl font-semibold'>Features</h2>
