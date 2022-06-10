@@ -13,9 +13,6 @@ const ProjectsDetails = () => {
     //receive projects via context api
     const projects = useContext(ProjectsContext);
 
-    //image set state
-    const [image, setImage] = useState('');
-
     //selecting selected project
     const selectedProject = projects.filter(p => p?.id == projectId);
 
@@ -23,15 +20,16 @@ const ProjectsDetails = () => {
         fea1, fea2, fea3, fea4, fea5, fea6, fea7, fea8, fun1, fun2, fun3, fun4, fun5, fun6, fun7, fun8, img, img1, img2, img3, name, liveLink, serverRepo, clientRepo, tech
     } = selectedProject[0];
 
-
+    //image set state
+    const [image, setImage] = useState(img);
 
     return (
-        <div className='project-container min-h-screen bg-cover text-white p-5'>
+        <div className='project-container min-h-screen bg-contain text-white p-5'>
             <SideNav></SideNav>
             <div className='container'>
                 <h2 className='text-6xl font-bold text-center py-10'>{name}</h2>
                 <div className=' flex flex-col items-center mb-20'>
-                    <div className='h-72 w-96 mb-3'>
+                    <div className='h-60 w-96 mb-3'>
                         <img className='w-full h-full'
                             src={image} alt="" />
                     </div>

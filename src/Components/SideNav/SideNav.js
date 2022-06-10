@@ -48,7 +48,7 @@ const SideNav = () => {
                 >
                     <FontAwesomeIcon icon={faSuitcase} className=" h-5"></FontAwesomeIcon>
                 </NavLink>
-                <label onClick={() => setCloseModal(true)} htmlFor="contact-modal" className="btn modal-button bg-yellow-400  text-lg rounded-full "><FontAwesomeIcon icon={faEnvelopeOpen} className=" h-5"></FontAwesomeIcon></label>
+                <label onClick={() => setCloseModal(true)} htmlFor="contact-modal" className="btn modal-button   text-lg rounded-full "><FontAwesomeIcon icon={faEnvelopeOpen} className=" h-5"></FontAwesomeIcon></label>
                 <NavLink
                     to={'/blogs'}
                     className={({ isActive }) =>

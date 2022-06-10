@@ -27,7 +27,6 @@ function App() {
           <Route path="/home/:projectId" element={<ProjectsDetails />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
-          <Route path="projects/:projectId" element={<ProjectsDetails />}></Route>
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/blogs" element={<Blogs />}></Route>
           <Route path="*" element={<NotFound />}></Route>
