@@ -1,10 +1,10 @@
-import React from 'react';
-import useProjects from '../../hooks/useProjects';
+import React, { useContext } from 'react';
+import { ProjectsContext } from '../../App';
 import Project from '../Shared/Project';
 import SideNav from '../SideNav/SideNav';
 const Projects = () => {
     //load all projects
-    const [projects] = useProjects();
+    const projects = useContext(ProjectsContext);
     return (
         <div className='bg-slate-900 min-h-screen p-5'>
             <SideNav></SideNav>

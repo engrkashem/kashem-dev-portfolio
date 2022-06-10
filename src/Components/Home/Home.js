@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ContactModal from '../Shared/ContactModal';
 import SideNav from '../SideNav/SideNav';
 import Banner from './Banner';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import useProjects from '../../hooks/useProjects';
 import Project from '../Shared/Project';
+import { ProjectsContext } from '../../App';
 
 const Home = () => {
     //to close contact modal after submitting
     const [closeModal, setCloseModal] = useState(false);
 
     //load fake project data
-    const [projects] = useProjects();
+    const projects = useContext(ProjectsContext);
     //slicing 3 projects out of 5
     const topProjects = projects.slice(0, 3);
 
